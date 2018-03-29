@@ -60,6 +60,9 @@ public class FileAnalyzer {
 				else if (input.equalsIgnoreCase("fucking")) {
 					fTotalCounter++;
 				}
+				else if (input.equalsIgnoreCase("motherfucker")) {
+					fTotalCounter++;
+				}
 	//bch word Counter			
 				else if (input.equalsIgnoreCase("bitch")) {
 					btchTotalCounter++;
@@ -143,6 +146,9 @@ public class FileAnalyzer {
 			else if (postLines.contains("fucking")) {
 				swearLineCounter++;
 			}
+			else if (postLines.contains("motherfucker")) {
+				swearLineCounter++;
+			}
 //bch Line Counter			
 			else if (postLines.contains("bitch")) {
 				swearLineCounter++;
@@ -222,6 +228,7 @@ public class FileAnalyzer {
 		System.out.println("Total lines with swearing: "+swearLineCounter);
 		System.out.println("Total number of posts: "+lineTotal);
 		System.out.println("Percentage of posts with swearing: "+curseRatioRound+"%");
+		System.out.println("This program could hypothetically be applied to any text file you wanted to scan for profanity. \nJust replace the text file name in Line 11 and be sure to properly locate the file in this program's folder.");
 		}
 			else {
 				System.out.println("I don't blame you. Let's go to church instead!");
